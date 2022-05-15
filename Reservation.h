@@ -12,6 +12,4 @@ class Reservation{
     void Reservation();
     void DisplayReservationDetails();
 
-
-
 }
