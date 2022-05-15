@@ -24,9 +24,9 @@ void Hotel::DisplayHotelDetails() {
 	cout << "Hotel Address is       : " << hotelAddress << endl;
 	cout << "Hotel Contact number is: " << hotelContact << endl;
   cout << "Hotel Email is         : " << hotelEmail << endl;
-  cout << "Price Per Night is     : " << hotelEmail << endl;
-  cout << "Number of rooms are    : " << hotelEmail << endl;
-  cout << "Hotel facilities are   : " << hotelEmail << endl;
+  cout << "Price Per Night is     : " << pricePerNight << endl;
+  cout << "Number of rooms are    : " << numOfRooms << endl;
+  cout << "Hotel facilities are   : " << facilities << endl;
   cout << "" << endl;
 };
 
