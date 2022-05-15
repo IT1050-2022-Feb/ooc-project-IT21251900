@@ -8,6 +8,6 @@ Reservation::Reservation(){
 }
 
 void Reservation:: DisplayReservationDetails(){
-  cout << "Reservation ID is: " << 
+ 
 }
 

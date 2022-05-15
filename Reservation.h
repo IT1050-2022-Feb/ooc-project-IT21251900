@@ -9,6 +9,6 @@ class Reservation{
     int price;
 
   public:
-    void Reservation();
+    Reservation();
     void DisplayReservationDetails();
 };
