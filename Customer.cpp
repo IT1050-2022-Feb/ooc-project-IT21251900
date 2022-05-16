@@ -1,6 +1,6 @@
 #include"Customer.h"
 #include<cstring>
-
+//customer s
 customer::customer(){}
 customer::customer(int cID,char cName[],char ctEmail[],int cContact,char cPassword[],Admin*Pad,Hotel*Phot[SIZE],int PnoOfReviews,int PnoOfReservations){
   custID=cID;
