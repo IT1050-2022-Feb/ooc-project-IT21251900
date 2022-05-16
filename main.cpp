@@ -64,13 +64,11 @@ int main()
 
 
 
-  //sween customer
-  
 customer*c;
 
 c=new customer();          //create a object;
 
-//method calling
+//method callings
   
 c->login();
 c->logout();
@@ -84,6 +82,7 @@ c->viewReservation();
 
 //delete object
 delete c;
+}
 
 
 	return 0;
