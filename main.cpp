@@ -82,7 +82,7 @@ c->viewReservation();
 
 //delete object
 delete c;
-}
+
 
 
 	return 0;
