@@ -7,7 +7,6 @@
 #include "Reservation.h"
 #include "Customer.h"
 
-
 using namespace std;
 
 int main()
@@ -48,27 +47,29 @@ int main()
          << endl;
     s1->DisplaySiteDetails();
 
-  //Creating Reservation objects
-  Reservation * R1;
-  R1 = new Reservation();
-
-  //Adding reservation details
-  R1 -> Reservation(001, 01/05/2022, 01/05/2022, 2, 2, oejfiejejejeoj , ififjjjejwf);
-
-  //Displaying reservation details
-  cout << "Reservation Details.." << endl << endl;
+    //Creating Reservation objects
+    Reservation * R1;
+    R1 = new Reservation();
   
-  R1 -> DisplayReservationDetails();
+    //Adding reservation details
+    R1 -> Reservation(001, 01/05/2022, 01/05/2022, 2, 2, oejfiejejejeoj , ififjjjejwf);
+  
+    //Displaying reservation details
+    cout << "Reservation Details.." << endl << endl;
+    
+    R1 -> DisplayReservationDetails();
 
 
 
 
 
+  //sween
+  
 customer*c;
 
 c=new customer();          //create a object;
 
-//method callings
+//method calling
   
 c->login();
 c->logout();
@@ -82,7 +83,6 @@ c->viewReservation();
 
 //delete object
 delete c;
-
 
 
 	return 0;

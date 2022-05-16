@@ -1,3 +1,8 @@
+// IT21251900
+// Rajapaksha R.M.S.D
+// Malabe
+// badge 4.1 G1
+
 #include <iostream>
 #include <cstring>
 #include "Hotel.h"
