@@ -9,14 +9,17 @@ using namespace std;
 
 int main()
 {
+  // creating hotel objects
   Hotel *H1;
 	H1 = new Hotel();
 
+  // adding hotel details
 	H1->AddHotelDetails(001,"Hotel Pinidiya","Welimada road, Bandarawela", 0573126222, "pinidiya@gmail.com", 20000 ,200,"Hot water, parking");
-	H1->DisplayHotelDetails();
-	H1->~Hotel();
 
-	delete H1;
+  // displaying hotel details
+  cout << "Hotel Details" << endl
+         << endl;
+	H1->DisplayHotelDetails();
 
    // creating objects
     Admin a1;
