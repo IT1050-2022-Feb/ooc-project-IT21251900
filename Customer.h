@@ -32,6 +32,6 @@ PnoOfReservations);
     void viewReservation();
     void cancelReservation();
     void updateProfileDetails();
-    ~customer();
+   ~customer();
 
 }
