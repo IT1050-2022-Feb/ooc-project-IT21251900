@@ -64,7 +64,7 @@ int main()
 
 
 
-  //sween
+  //sween customer
   
 customer*c;
 
