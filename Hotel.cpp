@@ -9,10 +9,18 @@
 using namespace std;
 
 Hotel::Hotel(){
-  
 };
 
-void Hotel::AddHotelDetails(int HotelID,char HotelName[50], char HotelAddress[256], int HotelContact, char HotelEmail[256], int PricePerNight ,int NumOfRooms, char Facilities[1000]){
+void Hotel::Register(
+int HotelID,
+char HotelName[50],
+char HotelAddress[256],
+int HotelContact,
+char HotelEmail[256],
+int PricePerNight, 
+int NumOfRooms, 
+char Facilities[1000])
+{
   hotelID = HotelID;
   strcpy(hotelName, HotelName);
   strcpy(hotelAddress, HotelAddress);

@@ -1,0 +1,2 @@
+main.o: main.cpp Hotel.h Admin.h siteSettings.h Reservation.h Payment.h \
+  Customer.h Review.h

@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-void Admin::AddAdminDetails(int pID, const char pEmail[], const char pUsername[], const char pPassword[])
+Admin::Admin(int pID, const char pEmail[], const char pUsername[], const char pPassword[])
 {
     adminID = pID;
     strcpy(adminEmail, pEmail);

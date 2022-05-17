@@ -1,3 +1,5 @@
+class Admin;
+
 class SiteSettings
 {
 private:
@@ -5,8 +7,10 @@ private:
     int siteContactNum;
     char siteEmail[50];
     char siteAddress[50];
+    Admin *a;
 
 public:
-    void AddSiteDetails(int pId, int pNum, const char pEmail[], const char pAddress[]);
+    SiteSettings();
+    SiteSettings(int pId, int pNum, const char pEmail[], const char pAddress[], Admin *pa);
     void DisplaySiteDetails();
 };

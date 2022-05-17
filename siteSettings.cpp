@@ -1,9 +1,12 @@
 #include "siteSettings.h"
+#include "Admin.h"
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-void SiteSettings::AddSiteDetails(int pId, int pNum, const char pEmail[], const char pAddress[])
+SiteSettings::SiteSettings(){}
+
+SiteSettings::SiteSettings(int pId, int pNum, const char pEmail[], const char pAddress[], Admin *pa)
 {
     siteID = pId;
     siteContactNum = pNum;
