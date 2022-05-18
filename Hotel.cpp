@@ -6,44 +6,53 @@
 #include <iostream>
 #include <cstring>
 #include "Hotel.h"
-using namespace std;
 
-Hotel::Hotel(){
-};
 
-void Hotel::Register(
-int HotelID,
-char HotelName[50],
-char HotelAddress[256],
-int HotelContact,
-char HotelEmail[256],
-int PricePerNight, 
-int NumOfRooms, 
-char Facilities[1000])
-{
-  hotelID = HotelID;
-  strcpy(hotelName, HotelName);
-  strcpy(hotelAddress, HotelAddress);
-  hotelContact = HotelContact;
-  strcpy(hotelEmail, HotelEmail);
-  pricePerNight = PricePerNight;
-  numOfRooms = NumOfRooms;
-  strcpy(facilities,Facilities);
-};
+Hotel::Hotel(){}
 
-void Hotel::DisplayHotelDetails() {
-	cout << "Hotel ID is            : " << hotelID << endl;
-	cout << "Hotel Name is          : " << hotelName << endl;
-	cout << "Hotel Address is       : " << hotelAddress << endl;
-	cout << "Hotel Contact number is: " << hotelContact << endl;
-  cout << "Hotel Email is         : " << hotelEmail << endl;
-  cout << "Price Per Night is     : " << pricePerNight << endl;
-  cout << "Number of rooms are    : " << numOfRooms << endl;
-  cout << "Hotel facilities are   : " << facilities << endl;
-  cout << "" << endl;
-};
+Hotel::Hotel(int PhotelID,char PhotelName[],char PhotelAddress[],int PhotelContact,char PhotelEmail[],int PpricePerNight,int PnumOfRooms,
+char Pfacilities[],Customer *Pcust,Admin *Pad){
+  
+  hotelID=PhotelID;
+	strcpy(hotelName,PhotelName);
+	strcpy(hotelAddress,PhotelAddress);
+	hotelContact=PhotelContact;
+	strcpy(hotelEmail,PhotelEmail);
+	pricePerNight=PpricePerNight;
+	numOfRooms=PnumOfRooms;
+	strcpy(facilities,Pfacilities);
+	cust=Pcust;
+	ad=Pad;
 
-Hotel::~Hotel()
-{
-	cout << " " << endl << endl;
-};
+}
+
+Hotel::Hotel(int ReservationID1, int CheckInDate1, int CheckOutDate1, int NoOfGuests1, int NoOfNights1,int ReservationID2, int CheckInDate2, int CheckOutDate2, int NoOfGuests2, int NoOfNights2)){
+
+  res[0]=new Reservation(int ReservationID1, int CheckInDate1, int CheckOutDate1, int NoOfGuests1, int NoOfNights1);
+  res[1]=new Reservation(int ReservationID2, int CheckInDate2, int CheckOutDate2, int NoOfGuests2, int NoOfNights2);
+}
+
+void Hotel::login(){
+
+}
+void Hotel:: confirmReservation(){
+
+}
+void Hotel::addReview(Review*rev){
+
+}
+void Hotel::cancelReservation(){
+
+}
+void Hotel::updateHotelDetails(){
+
+}
+void Hotel::DisplayHotelDetails(){
+
+}
+
+Hotel::~Hotel(){
+for(int i=0;i<SIZE;i++){
+delete res[i];
+}
+}

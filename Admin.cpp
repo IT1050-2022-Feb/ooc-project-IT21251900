@@ -3,6 +3,13 @@
 #include <cstring>
 using namespace std;
 
+Admin::Admin(){
+  adminID = 0;
+  strcpy(adminEmail, "");
+  strcpy(userName, "");
+  strcpy(adminPassword, "");
+}
+
 Admin::Admin(int pID, const char pEmail[], const char pUsername[], const char pPassword[])
 {
     adminID = pID;

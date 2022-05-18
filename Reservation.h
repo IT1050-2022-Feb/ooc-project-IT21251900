@@ -20,7 +20,9 @@ class Reservation{
 
   public:
     Reservation();  //Default Constructor
-    Reservation:: Reservation(int ReservationID, int CheckInDate, int CheckOutDate, int NoOfGuests, int NoOfNights, int payment1, int payment2); //Overloading Constructor
+    Reservation:: Reservation(int ReservationID, int CheckInDate, int CheckOutDate, int NoOfGuests, int NoOfNights, );
+//Overloading Constructor
+Reservation::Reservation(int payment1, int payment2);
     void DisplayReservationDetails();
     ~Reservation();
 };

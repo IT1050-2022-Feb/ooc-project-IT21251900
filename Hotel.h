@@ -6,7 +6,7 @@
 #include"Customer.h"
 #include"Reservation.h"
 #include"Review.h"
-
+#define SIZE 2
 
 class Hotel {
 private:
@@ -18,26 +18,22 @@ private:
 	int pricePerNight;
 	int numOfRooms;
 	char facilities[1000];
-	customer *cust;
+	Customer *cust;
 	Reservation *res[SIZE];
 	Admin *ad;
 
 public:
 	Hotel();
 
-	void Register(
-		int HotelID,
-		char HotelName[50],
-		char HotelAddress[256],
-		int HotelContact,
-		char HotelEmail[256],
-		int PricePerNight,
-		int NumOfRooms,
-		char Facilities[1000]);
+  Hotel(int PhotelID,char PhotelName[],char PhotelAddress[],int PhotelContact,char PhotelEmail[],int PpricePerNight,int PnumOfRooms,
+char Pfacilities[],Customer *Pcust,Admin *Pad);
+
+Hotel(int ReservationID1, int CheckInDate1, int CheckOutDate1, int NoOfGuests1, int NoOfNights1,int ReservationID2, int CheckInDate2, int CheckOutDate2, int NoOfGuests2, int NoOfNights2));
+
 	void login();
 	void confirmReservation();
+  void addReview(Review*rev);
 	void cancelReservation();
-	void viewReviews(Review *R);
 	void updateHotelDetails();
 	void DisplayHotelDetails();
 
