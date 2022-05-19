@@ -30,6 +30,7 @@ char Pfacilities[],Customer *Pcust,Admin *Pad);
 
 Hotel(int ReservationID1, int CheckInDate1, int CheckOutDate1, int NoOfGuests1, int NoOfNights1,int ReservationID2, int CheckInDate2, int CheckOutDate2, int NoOfGuests2, int NoOfNights2));
 
+  void addReview(Review * rev);
 	void login();
 	void confirmReservation();
   void addReview(Review*rev);

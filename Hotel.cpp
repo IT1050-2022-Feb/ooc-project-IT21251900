@@ -32,6 +32,9 @@ Hotel::Hotel(int ReservationID1, int CheckInDate1, int CheckOutDate1, int NoOfGu
   res[1]=new Reservation(int ReservationID2, int CheckInDate2, int CheckOutDate2, int NoOfGuests2, int NoOfNights2);
 }
 
+void Hotel:: addReview(Review * rev){
+
+}
 void Hotel::login(){
 
 }

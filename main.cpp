@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {
-	// creating hotel objects
+	// hotel objects
 
 	Hotel *hotel;
 	hotel = new Hotel();

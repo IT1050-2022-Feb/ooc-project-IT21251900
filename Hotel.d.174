@@ -1,1 +1,0 @@
-Hotel.o: Hotel.cpp Hotel.h Admin.h Customer.h Reservation.h Review.h
