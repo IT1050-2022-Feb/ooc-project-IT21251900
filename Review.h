@@ -1,5 +1,5 @@
-#include"Customer.h"
-#include"Admin.h"
+// #include"Customer.h"
+// #include"Admin.h"
 //create class 
 class Review{
   private:
@@ -9,4 +9,4 @@ class Review{
     void AddReviewDetails( int r_ID, char r_Content[]);
     void DisplayReviewDetails();
     
-}
+};

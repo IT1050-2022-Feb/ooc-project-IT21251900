@@ -10,17 +10,16 @@
 using namespace std;
 
 int main() {
-  
 	// creating hotel objects
 
-	Hotel*hotel;
+	Hotel *hotel;
 	hotel = new Hotel();
 	hotel->login();
-  hotel->confirmReservation();
-  hotel->addReview(Review*rev);
-  hotel->cancelReservation();
-  hotel->updateHotelDetails();
-  hotel->DisplayHotelDetails();
+	hotel->confirmReservation();
+	hotel->addReview(Review * rev);
+	hotel->cancelReservation();
+	hotel->updateHotelDetails();
+	hotel->DisplayHotelDetails();
 	delete hotel;
 
 	// creating objects
@@ -37,13 +36,13 @@ int main() {
 	cout << endl << "Site Details" << endl << endl;
 	s1->DisplaySiteDetails();
 
+  //deleteing objects
+  delete a1;
+  delete s1;
+
 	// Creating Reservation objects
 	Reservation *R1;
 	R1 = new Reservation();
-
-	// Adding reservation details
-	R1->Reservation(
-		001, 01 / 05 / 2022, 01 / 05 / 2022, 2, 2, oejfiejejejeoj, ififjjjejwf);
 
 	// Displaying reservation details
 	cout << "Reservation Details.." << endl << endl;

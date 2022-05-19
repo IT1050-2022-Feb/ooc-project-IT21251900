@@ -1,0 +1,1 @@
+main.o: main.cpp Admin.h Customer.h Hotel.h Reservation.h Review.h

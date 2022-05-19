@@ -1,3 +1,8 @@
+/*
+IT21251214 - Manathunga A.U.U
+Group 4.1 G1
+Malabe
+*/
 #include "siteSettings.h"
 #include "Admin.h"
 #include <iostream>
@@ -20,4 +25,12 @@ void SiteSettings::DisplaySiteDetails()
          << "Site Contact Number : " << siteContactNum << endl
          << "Site email : " << siteEmail << endl
          << "Site address : " << siteAddress << endl;
+}
+
+void SiteSettings::updateDetails(){
+  
+}
+
+SiteSettings::~SiteSettings(){
+  
 }

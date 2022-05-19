@@ -1,14 +1,17 @@
+/*
+IT21251214 - Manathunga A.U.U
+Group 4.1 G1
+Malabe
+*/
 #include "Admin.h"
 #include <iostream>
 #include <cstring>
 using namespace std;
 
 Admin::Admin(){
-  adminID = 0;
-  strcpy(adminEmail, "");
-  strcpy(userName, "");
-  strcpy(adminPassword, "");
+  
 }
+
 
 Admin::Admin(int pID, const char pEmail[], const char pUsername[], const char pPassword[])
 {
@@ -24,4 +27,19 @@ void Admin::DisplayAdminDetails()
          << "Admin email : " << adminEmail << endl
          << "Username : " << userName << endl
          << "Password : " << adminPassword << endl;
+}
+
+void Admin::login(){
+  
+}
+
+void Admin::manageCustomers(){
+  
+}
+
+void Admin::manageHotels(){
+  
+}
+Admin::~Admin(){
+  
 }
